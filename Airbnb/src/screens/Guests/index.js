@@ -3,10 +3,13 @@ import {View, Text, Pressable} from 'react-native';
 
 import styles from './styles.js';
 
+import {useNavigation} from '@react-navigation/native';
+
 const GuestsScreen = props => {
   const [adults, setAdults] = useState(0);
   const [children, setChildren] = useState(0);
   const [infants, setInfants] = useState(0);
+  const navigation = useNavigation();
 
   return (
     <View style={{justifyContent: 'space-between', height: '100%'}}>
@@ -79,9 +82,7 @@ const GuestsScreen = props => {
       </View>
 
       <Pressable
-        onPress={() => {
-          console.warn('clicked');
-        }}
+        onPress={() => navigation.navigate('Explore')}
         style={{
           marginBottom: 20,
           backgroundColor: '#f15454',
