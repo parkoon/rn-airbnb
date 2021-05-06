@@ -19,11 +19,7 @@ const Post = props => {
   return (
     <Pressable onPress={goToPostPage} style={styles.container}>
       {/* Image  */}
-      <Image
-        style={styles.image}
-        // source={{uri: post.image}}
-        // source={require('../../../assets/images/wallpaper.jpg')}
-      />
+      <Image style={styles.image} source={{uri: post.image}} />
 
       {/* Bed & Bedroom  */}
       <Text style={styles.bedrooms}>
