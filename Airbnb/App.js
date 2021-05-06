@@ -4,6 +4,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import SearchResultScreen from './src/screens/SearchResult';
 import DestinationSearchScreen from './src/screens/DestinationSearch';
+import GuestsScreen from './src/screens/Guests';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,7 +19,8 @@ const App = () => {
       <SafeAreaView style={backgroundStyle}>
         {/* <HomeScreen /> */}
         {/* <SearchResultScreen /> */}
-        <DestinationSearchScreen />
+        {/* <DestinationSearchScreen /> */}
+        <GuestsScreen />
       </SafeAreaView>
     </>
   );
