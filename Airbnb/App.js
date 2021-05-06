@@ -3,6 +3,7 @@ import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import SearchResultScreen from './src/screens/SearchResult';
+import DestinationSearchScreen from './src/screens/DestinationSearch';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -16,8 +17,8 @@ const App = () => {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <SafeAreaView style={backgroundStyle}>
         {/* <HomeScreen /> */}
-        {/* <Post post={post} /> */}
-        <SearchResultScreen />
+        {/* <SearchResultScreen /> */}
+        <DestinationSearchScreen />
       </SafeAreaView>
     </>
   );
