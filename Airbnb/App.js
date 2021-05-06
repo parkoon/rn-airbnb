@@ -17,6 +17,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Entype from 'react-native-vector-icons/Entypo';
+
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -64,6 +66,7 @@ const App = () => {
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
+            <Entype name="home" size={24} />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
